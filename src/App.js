@@ -3,6 +3,7 @@ import "./App.css";
 import SearchBar from "./Components/Searchbar";
 import RecipeCard from "./Components/RecipeCard";
 
+
 const searchApi = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
 function App() {
@@ -65,6 +66,13 @@ function App() {
             // If the user is not logged in, show the login page
             <div className="login-container">
               <h2>Login</h2>
+              <form>
+        <label for="email">email</label>
+        <input type="email" placeholder="enter your email" id="email" name="email"/>
+        <label for="password">password</label>
+        <input type="password" placeholder="*********" id="password" name="password"/>
+          </form>
+
               <button onClick={handleLogin}>Login</button>
             </div>
           )}
